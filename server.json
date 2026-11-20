@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.fitztoppicks/calendars-ingredients",
+  "title": "FitzTopPicks APIs: calendars, recipes, names, places, sizes and more",
+  "description": "Calendars, recipes, baby names, cities, coordinates, sizes, hazmat, per diem, tires and puzzles.",
+  "version": "1.1.1",
+  "websiteUrl": "https://fitztoppicks.com/apis",
+  "icons": [
+    {
+      "src": "https://fitztoppicks.com/static/img/app-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    },
+    {
+      "src": "https://fitztoppicks.com/static/img/app-192.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    },
+    {
+      "src": "https://fitztoppicks.com/static/img/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/fitz1567/fitztoppicks-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fitztoppicks.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: \"Bearer <your Zyla API Hub key>\" to run the tools listed on Zyla through your Zyla account (billed by Zyla). Leave it out for the free daily allowance.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

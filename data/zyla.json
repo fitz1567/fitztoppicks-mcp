@@ -1,0 +1,1100 @@
+{
+ "about": "Zyla API Hub ids for mcp-api (scripts/zyla-snapshot.mjs). Live APIs only (AppDashboard/data/zyla/listings.json status public).",
+ "takenAt": "2026-11-14",
+ "apis": {
+  "babynames": {
+   "id": 14592,
+   "name": "US Baby Name Trends API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/name/{name}": {
+     "id": 37402,
+     "params": [
+      "from",
+      "sex",
+      "to"
+     ],
+     "pathParams": [
+      "name"
+     ]
+    },
+    "/name/{name}/states": {
+     "id": 37403,
+     "params": [
+      "sex",
+      "year"
+     ],
+     "pathParams": [
+      "name"
+     ]
+    },
+    "/top": {
+     "id": 37404,
+     "params": [
+      "limit",
+      "sex",
+      "state",
+      "year"
+     ],
+     "pathParams": []
+    },
+    "/trending": {
+     "id": 37405,
+     "params": [
+      "by",
+      "from",
+      "limit",
+      "minCount",
+      "sex",
+      "state",
+      "to"
+     ],
+     "pathParams": []
+    },
+    "/similar/{name}": {
+     "id": 37406,
+     "params": [
+      "limit",
+      "sex"
+     ],
+     "pathParams": [
+      "name"
+     ]
+    },
+    "/compare": {
+     "id": 37407,
+     "params": [
+      "from",
+      "names",
+      "sex",
+      "to"
+     ],
+     "pathParams": []
+    },
+    "/peak": {
+     "id": 37408,
+     "params": [
+      "decade",
+      "limit",
+      "minBirths",
+      "sex"
+     ],
+     "pathParams": []
+    },
+    "/totals": {
+     "id": 37409,
+     "params": [
+      "from",
+      "sex",
+      "state",
+      "to"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "calendars": {
+   "id": 14563,
+   "name": "World Calendars Converter API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/convert": {
+     "id": 37316,
+     "params": [
+      "afterSunset",
+      "calendar",
+      "date",
+      "day",
+      "leap",
+      "method",
+      "month",
+      "to",
+      "year"
+     ],
+     "pathParams": []
+    },
+    "/today": {
+     "id": 37317,
+     "params": [
+      "afterSunset",
+      "method",
+      "timezone",
+      "to"
+     ],
+     "pathParams": []
+    },
+    "/months": {
+     "id": 37318,
+     "params": [
+      "calendar",
+      "method",
+      "year"
+     ],
+     "pathParams": []
+    },
+    "/holidays": {
+     "id": 37319,
+     "params": [
+      "calendar",
+      "calendarYear",
+      "include",
+      "israel",
+      "method",
+      "year"
+     ],
+     "pathParams": []
+    },
+    "/solar-terms": {
+     "id": 37320,
+     "params": [
+      "year"
+     ],
+     "pathParams": []
+    },
+    "/calendars": {
+     "id": 37321,
+     "params": [],
+     "pathParams": []
+    }
+   }
+  },
+  "cities": {
+   "id": 14562,
+   "name": "World City Autocomplete API",
+   "pricePerCall": 0.003249,
+   "endpoints": {
+    "/autocomplete": {
+     "id": 37310,
+     "params": [
+      "admin1",
+      "country",
+      "lang",
+      "limit",
+      "minPopulation",
+      "q"
+     ],
+     "pathParams": []
+    },
+    "/nearby": {
+     "id": 37312,
+     "params": [
+      "lang",
+      "lat",
+      "limit",
+      "lng",
+      "minPopulation",
+      "radius"
+     ],
+     "pathParams": []
+    },
+    "/timezone": {
+     "id": 37313,
+     "params": [
+      "lat",
+      "lng"
+     ],
+     "pathParams": []
+    },
+    "/countries": {
+     "id": 37314,
+     "params": [
+      "lang"
+     ],
+     "pathParams": []
+    },
+    "/admin1": {
+     "id": 37315,
+     "params": [
+      "country",
+      "lang"
+     ],
+     "pathParams": []
+    },
+    "/city/{placeId}": {
+     "id": 37420,
+     "params": [
+      "lang"
+     ],
+     "pathParams": [
+      "placeId"
+     ]
+    },
+    "/names/{placeId}": {
+     "id": 37421,
+     "params": [
+      "colloquial",
+      "historic",
+      "lang"
+     ],
+     "pathParams": [
+      "placeId"
+     ]
+    }
+   }
+  },
+  "coords": {
+   "id": 14589,
+   "name": "Coordinate Converter UTM MGRS API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/convert": {
+     "id": 37381,
+     "params": [
+      "ddDecimals",
+      "ddmDecimals",
+      "dmsDecimals",
+      "geohashLength",
+      "input",
+      "inputFormat",
+      "lat",
+      "lon",
+      "maidenheadLength",
+      "mgrsPrecision",
+      "order",
+      "pluscodeLength",
+      "ref",
+      "to",
+      "utmZone"
+     ],
+     "pathParams": []
+    },
+    "/validate": {
+     "id": 37382,
+     "params": [
+      "input",
+      "inputFormat",
+      "order",
+      "ref"
+     ],
+     "pathParams": []
+    },
+    "/distance": {
+     "id": 37383,
+     "params": [
+      "from",
+      "inputFormat",
+      "method",
+      "order",
+      "ref",
+      "to"
+     ],
+     "pathParams": []
+    },
+    "/destination": {
+     "id": 37384,
+     "params": [
+      "bearing",
+      "distance",
+      "from",
+      "inputFormat",
+      "order",
+      "ref",
+      "to",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/pluscode/shorten": {
+     "id": 37385,
+     "params": [
+      "code",
+      "ref"
+     ],
+     "pathParams": []
+    },
+    "/pluscode/recover": {
+     "id": 37386,
+     "params": [
+      "code",
+      "ref"
+     ],
+     "pathParams": []
+    },
+    "/formats": {
+     "id": 37387,
+     "params": [],
+     "pathParams": []
+    },
+    "/path": {
+     "id": 37422,
+     "params": [
+      "antimeridian",
+      "decimals",
+      "format",
+      "from",
+      "inputFormat",
+      "order",
+      "points",
+      "ref",
+      "step",
+      "to",
+      "unit",
+      "waypoints"
+     ],
+     "pathParams": []
+    },
+    "/circle": {
+     "id": 37423,
+     "params": [
+      "antimeridian",
+      "center",
+      "decimals",
+      "format",
+      "inputFormat",
+      "order",
+      "points",
+      "radius",
+      "ref",
+      "unit"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "coverfacts": {
+   "id": 14692,
+   "name": "Concrete Paint and Gravel Calculator API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/concrete": {
+     "id": 37978,
+     "params": [
+      "depth",
+      "diameter",
+      "height",
+      "length",
+      "platform",
+      "quantity",
+      "rise",
+      "run",
+      "shape",
+      "side",
+      "steps",
+      "thickness",
+      "units",
+      "waste",
+      "width",
+      "yield40",
+      "yield60",
+      "yield80"
+     ],
+     "pathParams": []
+    },
+    "/paint": {
+     "id": 37979,
+     "params": [
+      "ceiling",
+      "ceilingArea",
+      "coats",
+      "coverage",
+      "doorArea",
+      "doors",
+      "height",
+      "length",
+      "primer",
+      "primerCoverage",
+      "units",
+      "wallArea",
+      "waste",
+      "width",
+      "windowArea",
+      "windows"
+     ],
+     "pathParams": []
+    },
+    "/gravel": {
+     "id": 37980,
+     "params": [
+      "area",
+      "bagSize",
+      "density",
+      "depth",
+      "length",
+      "material",
+      "units",
+      "waste",
+      "width"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "hazmat": {
+   "id": 14560,
+   "name": "Hazmat Table Lookup API",
+   "pricePerCall": 0.012995,
+   "endpoints": {
+    "/un/{id}": {
+     "id": 37301,
+     "params": [
+      "provisions"
+     ],
+     "pathParams": [
+      "id"
+     ]
+    },
+    "/search": {
+     "id": 37302,
+     "params": [
+      "class",
+      "limit",
+      "name"
+     ],
+     "pathParams": []
+    },
+    "/class/{class}": {
+     "id": 37303,
+     "params": [
+      "limit",
+      "offset",
+      "pg",
+      "provisions"
+     ],
+     "pathParams": [
+      "class"
+     ]
+    },
+    "/special-provision/{code}": {
+     "id": 37304,
+     "params": [],
+     "pathParams": [
+      "code"
+     ]
+    }
+   }
+  },
+  "ingredients": {
+   "id": 14910,
+   "name": "Recipe Ingredient Parser API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/parse": {
+     "id": 38816,
+     "params": [
+      "line"
+     ],
+     "pathParams": []
+    },
+    "/convert": {
+     "id": 38817,
+     "params": [
+      "amount",
+      "item",
+      "line",
+      "prefer",
+      "rounding",
+      "spoons",
+      "to",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/format": {
+     "id": 38818,
+     "params": [
+      "amount",
+      "amountMax",
+      "fractions",
+      "item",
+      "notes",
+      "optional",
+      "prep",
+      "prepPosition",
+      "spelling",
+      "system",
+      "unit",
+      "units"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "lumberfacts": {
+   "id": 14693,
+   "name": "Lumber Size and Board Feet Calculator API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/size": {
+     "id": 37981,
+     "params": [
+      "condition",
+      "length",
+      "nominal",
+      "type"
+     ],
+     "pathParams": []
+    },
+    "/sizes": {
+     "id": 37982,
+     "params": [
+      "condition",
+      "type"
+     ],
+     "pathParams": []
+    },
+    "/boardfeet": {
+     "id": 37983,
+     "params": [
+      "basis",
+      "condition",
+      "length",
+      "lengthUnit",
+      "nominal",
+      "price",
+      "priceUnit",
+      "qty",
+      "thickness",
+      "type",
+      "width"
+     ],
+     "pathParams": []
+    },
+    "/sheet": {
+     "id": 37984,
+     "params": [
+      "area",
+      "areaUnit",
+      "nominal",
+      "size",
+      "type",
+      "waste"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "perdiem": {
+   "id": 14559,
+   "name": "Federal Per Diem Rates API",
+   "pricePerCall": 0.012995,
+   "endpoints": {
+    "/rates": {
+     "id": 37296,
+     "params": [
+      "city",
+      "county",
+      "date",
+      "did",
+      "fy",
+      "state",
+      "zip"
+     ],
+     "pathParams": []
+    },
+    "/trip": {
+     "id": 37297,
+     "params": [
+      "city",
+      "county",
+      "did",
+      "end",
+      "start",
+      "state",
+      "zip"
+     ],
+     "pathParams": []
+    },
+    "/mie-breakdown": {
+     "id": 37298,
+     "params": [
+      "fy",
+      "rate"
+     ],
+     "pathParams": []
+    },
+    "/locations": {
+     "id": 37299,
+     "params": [
+      "fy",
+      "limit",
+      "offset",
+      "q",
+      "state"
+     ],
+     "pathParams": []
+    },
+    "/fiscal-years": {
+     "id": 37300,
+     "params": [],
+     "pathParams": []
+    },
+    "/tax-exempt": {
+     "id": 37419,
+     "params": [
+      "card",
+      "exempt",
+      "state"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "plugfacts": {
+   "id": 14690,
+   "name": "Plug Type and Voltage by Country API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/compat": {
+     "id": 37967,
+     "params": [
+      "device",
+      "from",
+      "plugs",
+      "to"
+     ],
+     "pathParams": []
+    },
+    "/country/{code}": {
+     "id": 37968,
+     "params": [],
+     "pathParams": [
+      "code"
+     ]
+    },
+    "/search": {
+     "id": 37969,
+     "params": [
+      "confidence",
+      "frequency",
+      "limit",
+      "plug",
+      "q",
+      "voltage"
+     ],
+     "pathParams": []
+    },
+    "/countries": {
+     "id": 37970,
+     "params": [
+      "confidence",
+      "frequency",
+      "plug",
+      "voltage"
+     ],
+     "pathParams": []
+    },
+    "/plug/{type}": {
+     "id": 37971,
+     "params": [],
+     "pathParams": [
+      "type"
+     ]
+    },
+    "/plugs": {
+     "id": 37972,
+     "params": [],
+     "pathParams": []
+    }
+   }
+  },
+  "puzzle": {
+   "id": 14591,
+   "name": "Sudoku and Maze Generator API",
+   "pricePerCall": 0.021658,
+   "endpoints": {
+    "/sudoku": {
+     "id": 37394,
+     "params": [
+      "answers",
+      "difficulty",
+      "format",
+      "seed",
+      "svg"
+     ],
+     "pathParams": []
+    },
+    "/sudoku/solve": {
+     "id": 37395,
+     "params": [
+      "format",
+      "grid",
+      "svg"
+     ],
+     "pathParams": []
+    },
+    "/sudoku/hint": {
+     "id": 37396,
+     "params": [
+      "candidates",
+      "grid",
+      "original"
+     ],
+     "pathParams": []
+    },
+    "/nonogram": {
+     "id": 37397,
+     "params": [
+      "answers",
+      "density",
+      "format",
+      "h",
+      "seed",
+      "svg",
+      "w"
+     ],
+     "pathParams": []
+    },
+    "/kakuro": {
+     "id": 37398,
+     "params": [
+      "answers",
+      "format",
+      "seed",
+      "size",
+      "svg"
+     ],
+     "pathParams": []
+    },
+    "/cages": {
+     "id": 37399,
+     "params": [
+      "answers",
+      "format",
+      "ops",
+      "seed",
+      "size",
+      "svg"
+     ],
+     "pathParams": []
+    },
+    "/maze": {
+     "id": 37400,
+     "params": [
+      "answers",
+      "format",
+      "h",
+      "markers",
+      "seed",
+      "svg",
+      "w"
+     ],
+     "pathParams": []
+    },
+    "/themes": {
+     "id": 37401,
+     "params": [],
+     "pathParams": []
+    }
+   }
+  },
+  "sizes": {
+   "id": 14590,
+   "name": "Size Chart Converter API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/shoe": {
+     "id": 37388,
+     "params": [
+      "from",
+      "group",
+      "size",
+      "womenScale"
+     ],
+     "pathParams": []
+    },
+    "/ring": {
+     "id": 37389,
+     "params": [
+      "from",
+      "size"
+     ],
+     "pathParams": []
+    },
+    "/hat": {
+     "id": 37390,
+     "params": [
+      "from",
+      "size"
+     ],
+     "pathParams": []
+    },
+    "/clothing": {
+     "id": 37391,
+     "params": [
+      "from",
+      "size",
+      "type"
+     ],
+     "pathParams": []
+    },
+    "/chart": {
+     "id": 37392,
+     "params": [
+      "category",
+      "from",
+      "group",
+      "type",
+      "womenScale"
+     ],
+     "pathParams": []
+    },
+    "/systems": {
+     "id": 37393,
+     "params": [],
+     "pathParams": []
+    }
+   }
+  },
+  "thesaurus": {
+   "id": 14588,
+   "name": "Word Sense Thesaurus API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/synonyms": {
+     "id": 37375,
+     "params": [
+      "pos",
+      "safe",
+      "word"
+     ],
+     "pathParams": []
+    },
+    "/antonyms": {
+     "id": 37376,
+     "params": [
+      "pos",
+      "safe",
+      "word"
+     ],
+     "pathParams": []
+    },
+    "/related": {
+     "id": 37377,
+     "params": [
+      "limit",
+      "pos",
+      "relation",
+      "safe",
+      "word"
+     ],
+     "pathParams": []
+    },
+    "/define": {
+     "id": 37378,
+     "params": [
+      "pos",
+      "safe",
+      "word"
+     ],
+     "pathParams": []
+    },
+    "/family": {
+     "id": 37379,
+     "params": [
+      "depth",
+      "pos",
+      "safe",
+      "word"
+     ],
+     "pathParams": []
+    },
+    "/random": {
+     "id": 37380,
+     "params": [
+      "count",
+      "length",
+      "level",
+      "maxLength",
+      "minLength",
+      "pos",
+      "safe",
+      "seed",
+      "startsWith"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "threadfacts": {
+   "id": 14694,
+   "name": "Screw Thread and Tap Drill API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/thread/{designation}": {
+     "id": 37985,
+     "params": [
+      "percent"
+     ],
+     "pathParams": [
+      "designation"
+     ]
+    },
+    "/thread": {
+     "id": 37986,
+     "params": [
+      "designation",
+      "percent"
+     ],
+     "pathParams": []
+    },
+    "/tapdrill": {
+     "id": 37987,
+     "params": [
+      "percent",
+      "thread"
+     ],
+     "pathParams": []
+    },
+    "/clearance": {
+     "id": 37988,
+     "params": [
+      "fit",
+      "thread"
+     ],
+     "pathParams": []
+    },
+    "/drill/nearest": {
+     "id": 37989,
+     "params": [
+      "size",
+      "system",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/drill/{name}": {
+     "id": 37990,
+     "params": [],
+     "pathParams": [
+      "name"
+     ]
+    },
+    "/search": {
+     "id": 37991,
+     "params": [
+      "diameter",
+      "limit",
+      "q",
+      "series",
+      "system",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/threads": {
+     "id": 37992,
+     "params": [
+      "series",
+      "system"
+     ],
+     "pathParams": []
+    },
+    "/npt/{size}": {
+     "id": 37998,
+     "params": [],
+     "pathParams": [
+      "size"
+     ]
+    },
+    "/npt": {
+     "id": 37999,
+     "params": [
+      "size"
+     ],
+     "pathParams": []
+    }
+   }
+  },
+  "tipfacts": {
+   "id": 14691,
+   "name": "Tipping Customs by Country API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/tip": {
+     "id": 37973,
+     "params": [
+      "amount",
+      "country",
+      "service",
+      "units"
+     ],
+     "pathParams": []
+    },
+    "/country/{code}": {
+     "id": 37974,
+     "params": [],
+     "pathParams": [
+      "code"
+     ]
+    },
+    "/search": {
+     "id": 37975,
+     "params": [
+      "confidence",
+      "level",
+      "limit",
+      "q",
+      "service",
+      "serviceCharge"
+     ],
+     "pathParams": []
+    },
+    "/countries": {
+     "id": 37976,
+     "params": [
+      "confidence",
+      "level",
+      "service",
+      "serviceCharge"
+     ],
+     "pathParams": []
+    },
+    "/services": {
+     "id": 37977,
+     "params": [],
+     "pathParams": []
+    }
+   }
+  },
+  "tires": {
+   "id": 14561,
+   "name": "Tire Size Decoder API",
+   "pricePerCall": 0.006497,
+   "endpoints": {
+    "/decode": {
+     "id": 37305,
+     "params": [
+      "size"
+     ],
+     "pathParams": []
+    },
+    "/compare": {
+     "id": 37306,
+     "params": [
+      "from",
+      "speed",
+      "to",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/load-index": {
+     "id": 37307,
+     "params": [
+      "index",
+      "minLoad",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/speed-rating": {
+     "id": 37308,
+     "params": [
+      "minSpeed",
+      "symbol",
+      "unit"
+     ],
+     "pathParams": []
+    },
+    "/dot": {
+     "id": 37309,
+     "params": [
+      "asOf",
+      "code"
+     ],
+     "pathParams": []
+    }
+   }
+  }
+ }
+}

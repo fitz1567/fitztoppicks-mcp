@@ -1,0 +1,14 @@
+{
+  "name": "fitztoppicks-mcp-api",
+  "private": true,
+  "type": "module",
+  "description": "FitzTopPicks remote MCP server (Cloudflare Worker, stateless createMcpHandler): tools for every FitzTopPicks API on Zyla API Hub (calendars, ingredients, baby names, cities, coords, sizes, hazmat, per diem, puzzles and more).",
+  "scripts": {
+    "test": "node --no-warnings --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "agents": "0.33.0",
+    "zod": "^4.0.0"
+  }
+}
