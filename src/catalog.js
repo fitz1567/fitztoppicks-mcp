@@ -3073,6 +3073,17 @@ export const CATALOG = [
     "description": "The puzzle: 81 characters, 1-9 or 0/. for empty."
    },
    {
+    "name": "variant",
+    "in": "query",
+    "required": false,
+    "type": "string",
+    "enum": [
+     "classic",
+     "diagonal"
+    ],
+    "description": "classic (default) or diagonal: both long diagonals must also hold 1-9 once each. The rating is for classic only."
+   },
+   {
     "name": "svg",
     "in": "query",
     "required": false,

@@ -23,7 +23,7 @@ import { zylaKeyOf, callThroughZyla, toolError } from './zyla.js';
 import { takeAllowance, refusal, rateKey, limiterOk, pruneAllowance, dailyLimit, unitsOf } from './allowance.js';
 
 export const SERVICE = 'mcp-api';
-export const VERSION = '1.1.1'; // 1.1.1 (Nov 17, 2026): error points only for real faults (task 1780.2); registry icon + repository
+export const VERSION = '1.1.2'; // 1.1.2 (Nov 21, 2026): solve_sudoku takes variant (classic or diagonal). 1.1.1 (Nov 17, 2026): error points only for real faults (task 1780.2); registry icon + repository
 export const SERVER_INFO = { name: 'fitztoppicks-apis', title: 'FitzTopPicks APIs', version: VERSION };
 const MAX_BODY = 64 * 1024;
 

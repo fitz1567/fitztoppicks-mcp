@@ -1,7 +1,7 @@
 # FitzTopPicks APIs: calendars, recipes, names, places, sizes and more
 
 The source of FitzTopPicks' free remote MCP server, `com.fitztoppicks/calendars-ingredients` in the
-[official MCP Registry](https://registry.modelcontextprotocol.io). Version 1.1.1.
+[official MCP Registry](https://registry.modelcontextprotocol.io). Version 1.1.2.
 
 - **Connect:** `https://mcp.fitztoppicks.com/mcp` (Streamable HTTP). No sign-up: a free daily allowance per network.
   Optional: your own Zyla API Hub key as `Authorization: Bearer <key>` for the tools listed on Zyla (billed by Zyla).
